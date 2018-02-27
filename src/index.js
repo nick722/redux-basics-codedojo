@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Store from './store';
+
+const initialState = { count: 0 };
+
 class Counter extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = { count: 0 };
+        // this.state = { count: 0 };
 
         this.increment = this.increment.bind(this);
         this.decrement = this.decrement.bind(this);
